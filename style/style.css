@@ -4,7 +4,7 @@ body {
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.02em;
-  line-height: 24px;
+  line-height: 1.5;
   font-size: 16px;
 }
 :root {
@@ -121,20 +121,24 @@ li {
   color: var(--text);
 }
 .hero-title {
-  font-weight: 700;
+  margin-bottom: 48px;
+  width: 496px;
   font-size: 56px;
-  line-height: 60px;
-  text-align: center;
+  line-height: 1.07;
   color: var(--white);
 }
 .hero {
+  margin: 0 auto;
   padding-bottom: 188px;
   padding-top: 188px;
   background: var(--dark);
   text-align: center;
+  justify-content: center;
+}
+.hero-container {
+  width: 496px;
 }
 .button-hero {
-  margin-top: 48px;
   font-weight: 500;
   align-items: center;
   letter-spacing: 0.04em;
@@ -163,7 +167,7 @@ li {
 .what-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
   color: var(--dark);
@@ -171,17 +175,10 @@ li {
 .our-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
   color: var(--dark);
-}
-.employees {
-  margin-bottom: 8px;
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
 }
 .our-team {
   background: #f4f4fd;
@@ -198,6 +195,11 @@ li {
   padding-top: 0px;
 }
 .employees {
+  margin-bottom: 8px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
   text-align: center;
   font-weight: 500;
   font-size: 20px;
@@ -224,7 +226,7 @@ li {
   font-family: 'Raleway';
   font-weight: 800;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.16;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
@@ -234,13 +236,13 @@ li {
 .footer-text {
   width: 264px;
   color: var(--accent);
-  margin-top: 16px;
 }
 .logo-footer {
+  margin-bottom: 16px;
   font-family: 'Raleway';
   font-weight: 800;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.16;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
@@ -273,31 +275,16 @@ button {
   font-family: inherit;
 }
 .potfolio-button {
-  display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   padding: 12px 24px;
   background: var(--light);
   border: 1px solid var(--accent);
   border-radius: 4px;
   font-weight: 500;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--primary-brand);
-}
-.logo-footer {
-  font-family: 'Raleway';
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--light);
 }
 .list-portfolio {
   margin-bottom: 72px;
@@ -308,6 +295,13 @@ button {
 }
 .title-porfolio {
   margin-bottom: 8px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 .photo-about {
   column-gap: 24px;
@@ -321,9 +315,9 @@ button {
   padding-top: 32px;
   padding-bottom: 32px;
   background: #ffffff;
-  border-bottom: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  padding: 32px 16px;
 }
 .item-nav:hover {
   color: var(--pressed-state);
@@ -336,7 +330,6 @@ button {
   background: var(--pressed-state);
   color: var(--light);
   border-color: var(--pressed-state);
-  font-size: 16px;
 }
 .potfolio-button:focus {
   background: var(--pressed-state);
